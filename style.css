@@ -1,0 +1,147 @@
+:root {
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+  --Blue: hsl(248, 32%, 49%);
+  --Dark--Blue: hsl(249, 10%, 26%);
+  --Grayish--Blue: hsl(246, 25%, 77%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  background: var(--Red) url("images/bg-intro-desktop.png");
+}
+.one {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-flow: column nowrap;
+  color: #fff;
+  width: 50%;
+  height: 100%;
+  padding-left: 8rem;
+}
+.one h1 {
+  font-size: 4.5rem;
+}
+.one p {
+  font-size: 1.6rem;
+}
+.two {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column nowrap;
+  width: 50%;
+  height: 100%;
+}
+.two form {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  width: 40rem;
+  height: 50%;
+  background: #fff;
+  border-radius: 0.5rem;
+}
+.two form input {
+  border-color: var(--Blue);
+  width: 90%;
+  height: 4rem;
+  border-radius: 0.5rem;
+  outline: none;
+  padding: 1.5rem 0;
+  padding-left: 2rem;
+}
+.two form button {
+  width: 90%;
+  height: 4rem;
+  text-align: center;
+  background: var(--Green);
+  color: #fff;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+}
+.two form p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--Grayish--Blue);
+}
+.two form p a {
+  color: var(--Red);
+  text-decoration: none;
+}
+.toast {
+  background: var(--Blue);
+  font-size: 1.6rem;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  width: 40rem;
+  height: 4.5rem;
+  border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 50%;
+  }
+  .one {
+    margin-top: 4rem;
+    text-align: center;
+    width: 100%;
+    height: 35vh;
+    padding-left: 0rem;
+  }
+  .one h1 {
+    font-size: 4.5rem;
+  }
+  .one p {
+    font-size: 1.6rem;
+  }
+  .two {
+    justify-content: flex-start;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: 90vh;
+  }
+  .two form {
+    margin-top: 4rem;
+    width: 90%;
+    height: 60%;
+  }
+  .two form input {
+    width: 90%;
+    height: 6rem;
+    padding: 1.5rem 0;
+    padding-left: 2rem;
+  }
+  .two form button {
+    width: 90%;
+    height: 5rem;
+  }
+  .two form p {
+    font-size: 1.1rem;
+  }
+  .toast {
+    font-size: 1.6rem;
+    width: 90%;
+    height: 6rem;
+  }
+}
